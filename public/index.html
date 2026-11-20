@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory | TXON</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Student Directory</h1>
+        <p>Manage and explore student records</p>
+    </header>
+
+    <main class="container">
+        <section class="add-student">
+            <h2>Add a Student</h2>
+
+            <form id="student-form">
+                <label for="student-name">Student Name</label>
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        id="student-name"
+                        name="name"
+                        placeholder="Enter student name"
+                        required
+                    >
+
+                    <button type="submit" id="add-button">
+                        Add Student
+                    </button>
+                </div>
+
+                <p id="form-message" role="status"></p>
+            </form>
+        </section>
+
+        <section class="student-section">
+            <div class="section-heading">
+                <h2>All Students</h2>
+                <span id="student-count">0 Students</span>
+            </div>
+
+            <div id="student-list" class="student-list">
+                <p>Loading students...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>TXON Full Stack Development Internship — Week 2</p>
+    </footer>
+</body>
+</html>
